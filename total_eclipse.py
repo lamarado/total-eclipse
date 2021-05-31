@@ -13,28 +13,26 @@
 # https://www.innovuze.com/careers
 
 def total_eclipse_of_the_heart():
-    turn_around(0)
+    turn_around()
+    and_i_need_you()
 
-def turn_around(i):
+def turn_around(i = 0):
     print("Turn around")
-    if i < 4:
+    if i < 6:  
+        if i > 3:
+            print("Bright eyes")
         every_now_and_then(i)
-    elif i < 6:
-        print("Bright eyes")
-        every_now_and_then(i)
-        if i == 5:
-            and_i_need_you(0)
-            return
-    turn_around(i + 1)
+        if i < 5:
+            turn_around(i + 1)
         
-def every_now_and_then(i):
+def every_now_and_then(i = 0):
     print("Every now and then I")
     if i < 4:
         get_a_little_bit(i)
     elif i < 6:
         print("fall apart")
         
-def get_a_little_bit(i):
+def get_a_little_bit(i = 0):
     print("get a little bit")
     if i==0:
         print("lonely and you're never coming 'round")
@@ -45,7 +43,7 @@ def get_a_little_bit(i):
     elif i==3:
         print("bit terrified and then I see the look in your eyes") 
 
-def and_i_need_you(i):
+def and_i_need_you(i = 0):
     print("And I need you")
     if i == 0:
         print("now tonight")
